@@ -1,6 +1,7 @@
 import React from 'react'
 import { Input, Card, Spacer, Text, Button } from '@nextui-org/react';
 import {useForm} from 'react-hook-form'
+import { Link } from 'react-router-dom';
 
 function SignUp() {
     
@@ -24,8 +25,9 @@ function SignUp() {
                     <Spacer y={1.5} />
                     <Input.Password underlined labelPlaceholder="Confirm password" name='confirmPassword' {...register('confirmPassword')}/>
                     <Spacer y={1.5} />
-                    <Button>Sign Up</Button>
+                    <Button color="secondary">Sign Up</Button>
                     <Spacer y={1.5} />
+                    <Text>Already have an account? <Link to='/signin'>Sign In</Link></Text>
                 </Card>
             </form>
       </div>
