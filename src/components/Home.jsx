@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div className='home'>
+    <div className='centered'>
         <Link to='/signup'><Button>Sign Up</Button></Link>
         <Link to='/signin'><Button>Sign In</Button></Link>
     </div>
