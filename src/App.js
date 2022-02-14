@@ -11,7 +11,7 @@ function App() {
     <div className='App'>
     <NextUIProvider>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<SignIn/>}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/signin' element={<SignIn/>}/>
       </Routes>

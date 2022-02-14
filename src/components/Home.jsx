@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div className='centered'>
-        <Link to='/signup'><Button>Sign Up</Button></Link>
-        <Link to='/signin'><Button>Sign In</Button></Link>
+        <Link to='/signup'><Button color='gradient'>Sign Up</Button></Link>
+        <Link to='/signin'><Button color='gradient'>Sign In</Button></Link>
     </div>
   )
 }
