@@ -2,13 +2,14 @@ import React from 'react'
 import { Input, Card, Spacer, Text, Button } from '@nextui-org/react';
 import {useForm} from 'react-hook-form';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 
 function SignIn() {
     const {register, handleSubmit} = useForm();
 
     const onSubmit = (data) => {
-        console.log(data)
+        axios.post('http://localhost:5005/verify-user', data)
     }
 
   return (
@@ -21,7 +22,7 @@ function SignIn() {
                 <Spacer y={1.5} />
                 <Input.Password underlined labelPlaceholder="Password" name='password' {...register('password')}/>
                 <Spacer y={1.5} />
-                <Button color="secondary">Sign In</Button>
+                <Button color='secondary'>Sign In</Button>
                 <Spacer y={1.5} />
                 <Text>Don't have an account yet? <Link to='/signup'>Register</Link></Text>
             </Card>
