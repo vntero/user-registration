@@ -24,7 +24,7 @@ function SignUp() {
                     <Spacer y={1.5} />
                     <Input.Password underlined labelPlaceholder="Password" name='password' {...register('password')}/>
                     <Spacer y={1.5} />
-                    <Button color='error'>Sign Up</Button>
+                    <Button color='gradient'>Sign Up</Button>
                     <Spacer y={1.5} />
                     <Text>Already have an account? <Link to='/signin'>Sign In</Link></Text>
                 </Card>
