@@ -1,15 +1,18 @@
 import React from 'react'
 import { Input, Card, Spacer, Text, Button } from '@nextui-org/react';
 import {useForm} from 'react-hook-form'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 function SignUp() {
     
+    const navigate = useNavigate()
+
     const {register, handleSubmit} = useForm()
 
     const onSubmit = (data) => {
         axios.post("http://localhost:5005/create-user", data)
+        navigate('/signin')
     }
 
   return (
@@ -24,7 +27,7 @@ function SignUp() {
                     <Spacer y={1.5} />
                     <Input.Password underlined labelPlaceholder="Password" name='password' {...register('password')}/>
                     <Spacer y={1.5} />
-                    <Button color='gradient'>Sign Up</Button>
+                    <Button color='error'>Sign Up</Button>
                     <Spacer y={1.5} />
                     <Text>Already have an account? <Link to='/signin'>Sign In</Link></Text>
                 </Card>

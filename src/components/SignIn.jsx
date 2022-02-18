@@ -18,7 +18,7 @@ function SignIn() {
             <Card css={{ mw: "400px" }}>
                 <Text h2>Enter your credentials</Text>
                 <br />
-                <Input clearable underlined placeholder="Email address" type='email' name='email' {...register('email')}/>
+                <Input underlined placeholder="Email address" type='email' name='email' {...register('email')}/>
                 <Spacer y={1.5} />
                 <Input.Password underlined labelPlaceholder="Password" name='password' {...register('password')}/>
                 <Spacer y={1.5} />
