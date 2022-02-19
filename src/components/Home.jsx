@@ -7,6 +7,7 @@ function Home() {
     <div className='centered'>
         <Link to='/signup'><Button color='error'>Sign Up</Button></Link>
         <Link to='/signin'><Button color='secondary'>Sign In</Button></Link>
+        <Link to='/welcome'><Button color='success'>Protected</Button></Link>
     </div>
   )
 }
