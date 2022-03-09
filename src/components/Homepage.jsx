@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Grid, Card, Text, Divider, Row,  } from '@nextui-org/react';
 import { Link } from 'react-router-dom';
 
-function Home() {
+function Homepage() {
   return (
     <div className='centered'>
         <Grid>
@@ -33,4 +33,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Homepage

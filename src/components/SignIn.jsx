@@ -18,13 +18,15 @@ function SignIn() {
             <Card css={{ mw: "400px" }}>
                 <Text h2>Enter your credentials</Text>
                 <br />
-                <Input underlined placeholder="Email address" type='email' name='email' {...register('email')}/>
+                <Input underlined labelPlaceholder="Email address" type='email' name='email' {...register('email')}/>
                 <Spacer y={1.5} />
                 <Input.Password underlined labelPlaceholder="Password" name='password' {...register('password')}/>
                 <Spacer y={1.5} />
                 <Button color='secondary'>Sign In</Button>
                 <Spacer y={1.5} />
                 <Text>Don't have an account yet? <Link to='/signup'>Register</Link></Text>
+                
+                <Link to='/' className='centered'><img src="/images/home.png" alt="homepage" style={{height: 30, width:30}}/></Link>
             </Card>
         </form>
     </div>
