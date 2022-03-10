@@ -8,7 +8,8 @@ function Homepage() {
         <Grid>
             <Card css={{ mw: "580px" }}>
                 <Card.Header>
-                  <Text b>User registration</Text>
+                <img src="/images/home.png" alt="Homepage" style={{height: 30, width:30, marginRight: 5}}/>
+                <Text h2>User registration</Text>
                 </Card.Header>
                 <Divider/>
                 <Card.Body css={{ py: '$10' }}>
